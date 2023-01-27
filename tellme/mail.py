@@ -7,7 +7,7 @@ except ImportError:
     from django.urls import reverse
 
 
-def send_mail(request, feedback, fail_silently=True):
+def send_mail(request, feedback, fail_silently=False):
     message = _("Your site %(host)s received feedback from %(user)s.\n"
                 "The comments were:\n"
                 "%(note)s.\n\n"
